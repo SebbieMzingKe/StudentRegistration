@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="475.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrationapp.FXMLRegister">
+   <children>
+      <Label layoutX="207.0" layoutY="38.0" text="Enter your details below to register" />
+      <Label layoutX="185.0" layoutY="105.0" text="Username" />
+      <Label layoutX="185.0" layoutY="155.0" text="Password" />
+      <PasswordField fx:id="password" layoutX="238.0" layoutY="151.0" promptText="password" />
+      <TextField fx:id="username" layoutX="239.0" layoutY="101.0" promptText="username" />
+      <PasswordField fx:id="confirm" layoutX="239.0" layoutY="200.0" promptText="confirm password" />
+      <Label layoutX="137.0" layoutY="204.0" text="Confirm Password" />
+      <Button layoutX="199.0" layoutY="263.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="register" layoutX="347.0" layoutY="263.0" mnemonicParsing="false" onAction="#handle_register" text="Register" />
+      <Hyperlink fx:id="back" layoutX="239.0" layoutY="319.0" onAction="#handle_back" text="here" />
+      <Label layoutX="210.0" layoutY="322.0" text="Click" />
+      <Label layoutX="272.0" layoutY="322.0" text="to go back to login page" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="619.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrationapp.FXMLStudent">
+   <children>
+      <Label layoutX="244.0" layoutY="18.0" text="Enter  your personal details to login" textFill="#0518f2" />
+      <Label layoutX="129.0" layoutY="62.0" text="Registration Number" />
+      <Label layoutX="129.0" layoutY="100.0" text="First Name" />
+      <Label layoutX="129.0" layoutY="148.0" text="Middle Name" />
+      <Label layoutX="130.0" layoutY="192.0" text="Last Name" />
+      <Label layoutX="129.0" layoutY="245.0" text="Gender" />
+      <Label layoutX="131.0" layoutY="291.0" text="Date of Birth" />
+      <Label layoutX="128.0" layoutY="350.0" text="Phone Number" />
+      <Label layoutX="126.0" layoutY="395.0" text="Programme" />
+      <Label layoutX="123.0" layoutY="439.0" text="Password" />
+      <Button fx:id="cancel" layoutX="148.0" layoutY="478.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="save" layoutX="300.0" layoutY="478.0" mnemonicParsing="false" onAction="#handle_save" text="Save" />
+      <TextField fx:id="reg_no" layoutX="264.0" layoutY="58.0" promptText="registration number" />
+      <TextField fx:id="first_name" layoutX="264.0" layoutY="96.0" promptText="first name" />
+      <TextField fx:id="middle_name" layoutX="264.0" layoutY="144.0" promptText="middle name" />
+      <TextField fx:id="last_name" layoutX="264.0" layoutY="188.0" promptText="last name" />
+      <RadioButton fx:id="female" layoutX="264.0" layoutY="245.0" mnemonicParsing="false" text="Female" />
+      <RadioButton fx:id="male" layoutX="370.0" layoutY="245.0" mnemonicParsing="false" text="Male" />
+      <DatePicker layoutX="-279.0" layoutY="136.0" />
+      <DatePicker fx:id="dob" layoutX="254.0" layoutY="287.0" promptText="date of birth" />
+      <TextField fx:id="phone_no" layoutX="254.0" layoutY="338.0" promptText="phone number" />
+      <ComboBox fx:id="p_code" layoutX="254.0" layoutY="391.0" prefWidth="150.0" promptText="programme" />
+      <PasswordField fx:id="password" layoutX="255.0" layoutY="435.0" promptText="password" />
+      <Hyperlink fx:id="logout" layoutX="473.0" layoutY="526.0" onAction="#handle_logout" text="Logout" />
+   </children>
+</AnchorPane>
